@@ -1,0 +1,8 @@
+Dockerfile
+.dockerignore
+LICENSE
+README.md
+diagrams
+CHANGELOG.md
+*/node_modules
+*/build

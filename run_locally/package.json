@@ -1,0 +1,29 @@
+{
+  "name": "run_locally",
+  "version": "1.0.0",
+  "description": "Runs the project locally",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "concurrently \"cd ../back_end && npm install\" \"cd ../front_end && npm install\"",
+    "start": "npm run start:windows",
+    "start:windows": "concurrently \"cd ../back_end && npm run start:local:windows\" \"cd ../front_end && npm run start:local\"",
+    "start:linux": "concurrently \"cd ../back_end && npm run start:local:linux\" \"cd ../front_end && npm run start:local:linux\"",
+    "start:mac": "concurrently \"cd ../back_end && npm run start:local:mac\" \"cd ../front_end && npm run start:local:mac\"",
+    "test": "concurrently \"cd ../back_end && npm run test\" \"cd ../front_end && npm run test -- --watchAll=false\"",
+    "dependup": "npm run dependup:upgrade",
+    "dependup:check": "npm run dependup:check:run_locally && npm run dependup:check:backend && npm run dependup:check:frontend",
+    "dependup:check:run_locally": "ncu",
+    "dependup:check:backend": "cd ../back_end && npm run dependup:check",
+    "dependup:check:frontend": "cd ../front_end && npm run dependup:check",
+    "dependup:upgrade": "npm run dependup:upgrade:run_locally && npm run dependup:upgrade:backend && npm run dependup:upgrade:frontend",
+    "dependup:upgrade:run_locally": "ncu -u",
+    "dependup:upgrade:backend": "cd ../back_end && npm run dependup:upgrade",
+    "dependup:upgrade:frontend": "cd ../front_end && npm run dependup:upgrade"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "npm-check-updates": "^11.6.0"
+  }
+}
