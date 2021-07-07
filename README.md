@@ -1,10 +1,18 @@
-# Penjar - PostgreSQL Express Node Jest Axios React
+# Oanete - Open API Node Express TypeScript Example
 
-Penjar is the fastest way to spin up a Full Stack application (React + Node) with Jest testing. Evolution and based off of the [Careen](https://github.com/NguyenAndrew/careen) stack. Now using TypeScript!
+Oanete (Pronounced: Oh neat!) is an Express Node TypeScript project that uses an Open API file to describe the API, and ensure the implementation always matches that description. 
+
+Useful to watch the following video, to understand the benefits of structuring a project in this format: https://www.youtube.com/watch?v=nfkppuQ-Eg0 - "Phil Sturgeon presents Design First APIs using Stoplight Studio @ PHP South Wales"
 
 ## Architecture
 
 ![Architecture](diagrams/architecture.drawio.png)
+
+## QuickStart - Updating the API
+1. Download [Stoplight Studio](https://stoplight.io/studio/) (Note: Either Mac, Windows, or Linux depending on your desktop)
+2. Using Stoplight Studio, select "Open Existing Folder", and open up this project's api_documentation folder
+3. Edit the API the way you want it to be!
+4. Update implementation code to match API! (More instructions on running code below)
 
 ## QuickStart - Running Locally
 1. Navigate to the run_locally directory
@@ -32,12 +40,3 @@ Penjar is the fastest way to spin up a Full Stack application (React + Node) wit
 5. Upgrade all dependencies with ```npm run dependup```
 6. Upgrade dependencies in your package-lock.json with ```npm install```
 7. Optional: Check to see which dependencies were not updated (due to failing tests) with ```npm run dependup:check```
-
-## Quickstart - (Optional) Configuring a database
-1. Navigate to the back_end directory
-2. For local setup: Create a database.json file in the **src/database** directory, configure this information with database credentials (Note: database.json in back_end directory is excluded by git in .gitignore).
-3. For cloud setup: Place database credentials within env variables, parse this information by inserting custom code into databaseInfo.ts
-4. Configure database client
-
-## Roadmap
-* Add rest of tests for existing code on the back end
