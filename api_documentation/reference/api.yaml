@@ -4,7 +4,8 @@ info:
   version: '1.0'
   description: An example Open API and Express project.
 servers:
-  - url: 'http://localhost:3000'
+  - url: 'http://localhost:3001'
+    description: Local
 paths:
   /health:
     get:

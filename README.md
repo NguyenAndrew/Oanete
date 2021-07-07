@@ -21,6 +21,12 @@ Useful to watch the following video, to understand the benefits of structuring a
 5. Run your application with ```npm run start``` (Note: `start:windows`, `start:linux`, and `start:mac` are also available)
 6. Ready to Code!
 
+## Quickstart - Import and Calling API with Postman
+1. Download [Postman App](https://www.postman.com/downloads/)
+2. Open Postman and go to File->Import->File, upload the api file located within this project's ./api_documentation/reference/api.yaml
+3. Click import
+4. Start calling the API!
+
 ## QuickStart - Running on Docker
 1. Make sure you are on the root directory
 2. Build the docker image: `docker build -t my-penjar-app-image .`
