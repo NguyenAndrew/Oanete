@@ -12,7 +12,7 @@ Useful to watch the following video, to understand the benefits of structuring a
 1. Download [Stoplight Studio](https://stoplight.io/studio/) (Note: Either Mac, Windows, or Linux depending on your desktop)
 2. Using Stoplight Studio, select "Open Existing Folder", and open up this project's api_documentation folder
 3. Edit the API the way you want it to be!
-4. Update implementation code to match API! (More instructions on running code below)
+4. Update implementation code to match API (More instructions on running code below)
 
 ## QuickStart - Running Locally
 1. Navigate to the run_locally directory
