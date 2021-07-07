@@ -28,11 +28,7 @@ paths:
                 type: object
               examples: {}
       description: Can be used to test axios post calls
-      parameters:
-        - schema:
-            type: string
-          in: query
-          name: Yoyo
+      parameters: []
     parameters: []
 components:
   schemas: {}
