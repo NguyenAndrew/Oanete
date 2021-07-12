@@ -1,6 +1,8 @@
 # Oanete - Open API Node Express TypeScript Example
 
-Oanete (Pronounced: Oh neat!) is an Express Node TypeScript project that uses an Open API file to describe the API, and ensure the implementation always matches that description. 
+Oanete (Pronounced: Oh neat!) is an Express Node TypeScript project that uses an Open API file to describe the API, and to help ensure the implementation matches that description.
+
+To avoid having more operations defined in implementation over what is defined in the Open API file, see Oanete-C: https://github.com/NguyenAndrew/Oanete-C
 
 Useful to watch the following video, to understand the benefits of structuring a project in this format: https://www.youtube.com/watch?v=nfkppuQ-Eg0 - "Phil Sturgeon presents Design First APIs using Stoplight Studio @ PHP South Wales"
 
